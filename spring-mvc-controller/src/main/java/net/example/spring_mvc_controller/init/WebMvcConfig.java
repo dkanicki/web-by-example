@@ -9,10 +9,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.JstlView;  
 import org.springframework.web.servlet.view.UrlBasedViewResolver;  
   
-@Configuration 											// specifies the class as configuration  
-@ComponentScan("net.example.spring_mvc_controller") 	// specifies which package to scan for controllers
-@EnableWebMvc 											// enables Spring's annotations in the code  
-public class WebAppConfig extends WebMvcConfigurerAdapter {  
+@Configuration 													// this is the configuration class  
+@EnableWebMvc 													// enables Spring's mvc annotations
+@ComponentScan("net.example.spring_mvc_controller.controller") 	// specifies which package to scan for controllers
+public class WebMvcConfig extends WebMvcConfigurerAdapter {  
       
     @Bean  
     public UrlBasedViewResolver setupViewResolver() {  
