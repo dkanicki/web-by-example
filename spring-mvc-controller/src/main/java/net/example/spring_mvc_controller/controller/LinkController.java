@@ -11,7 +11,7 @@ public class LinkController {
 	public ModelAndView gotoPage2() {
 		
 		ModelAndView view = new ModelAndView();
-		view.setViewName("page2view"); // name of the jsp-file in the "pages" folder
+		view.setViewName("page2"); // name of the jsp-file in the "pages" folder
 
 		view.addObject("message", "MVC Spring is here"); // adding of str object as "message" parameter
 
